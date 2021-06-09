@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.dressingapp.FirstFragment"
+        android:name="com.example.dressingapp.Accueil"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -17,12 +17,67 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.dressingapp.SecondFragment"
+        android:name="com.example.dressingapp.Liste"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_toHauts"
+            app:destination="@id/Hauts" />
+        <action
+            android:id="@+id/action_SecondFragment_toBas"
+            app:destination="@id/Bas" />
+        <action
+            android:id="@+id/action_SecondFragment_toDessous"
+            app:destination="@id/Dessous" />
+        <action
+            android:id="@+id/action_SecondFragment_toChaussures"
+            app:destination="@id/Chaussures" />
+        <action
+            android:id="@+id/action_SecondFragment_toVestes"
+            app:destination="@id/Vestes" />
+        <action
+            android:id="@+id/action_SecondFragment_toEnsembles"
+            app:destination="@id/Ensembles" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Hauts"
+        android:name="com.example.dressingapp.Hauts"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/hauts">
+    </fragment>
+    <fragment
+        android:id="@+id/Ensembles"
+        android:name="com.example.dressingapp.Ensembles"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/ensembles">
+    </fragment>
+    <fragment
+        android:id="@+id/Bas"
+        android:name="com.example.dressingapp.Bas"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/bas">
+    </fragment>
+    <fragment
+        android:id="@+id/Dessous"
+        android:name="com.example.dressingapp.Dessous"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/dessous">
+    </fragment>
+    <fragment
+        android:id="@+id/Chaussures"
+        android:name="com.example.dressingapp.Chaussures"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/chaussures">
+    </fragment>
+    <fragment
+        android:id="@+id/Vestes"
+        android:name="com.example.dressingapp.Vestes"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/vestes">
     </fragment>
 </navigation>
